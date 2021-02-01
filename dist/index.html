@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viola Phrase Sequencer</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.69/Tone.js'></script>  <!-- bring in the Tone.js library - google search for tone.js cdn-->
+  </head>
+
+<body>
+
+
+<h1>Viola Phrase Sequencer</h1>
+<br>
+<div>
+  <div class="seqbox">
+    <label class="container">
+      <input type="checkbox" id="row0step0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step5">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step6">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row0step7">
+      <span class="checkmark"></span>
+    </label>
+      <label class="container">
+        <input type="checkbox" id="row0step8">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step9">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step10">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step11">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step12">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step13">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step14">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+        <input type="checkbox" id="row0step15">
+        <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <div class="seqbox">
+    <label class="container">
+      <input type="checkbox" id="row1step0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step5">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step6">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step7">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step8">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step9">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step10">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step11">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step12">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step13">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step14">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row1step15">
+      <span class="checkmark"></span>
+  </label>
+  </div>
+
+  <div class="seqbox">
+    <label class="container">
+      <input type="checkbox" id="row2step0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step5">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step6">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step7">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step8">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step9">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step10">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step11">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step12">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step13">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step14">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row2step15">
+      <span class="checkmark"></span>
+  </label>
+  </div>
+
+  <div class="seqbox">
+    <label class="container">
+      <input type="checkbox" id="row3step0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step5">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step6">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step7">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step8">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step9">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step10">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step11">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step12">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step13">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step14">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row3step15">
+      <span class="checkmark"></span>
+  </label>
+  </div>
+
+  <div class="seqbox">
+    <label class="container">
+      <input type="checkbox" id="row4step0">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step5">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step6">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step7">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step8">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step9">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step10">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step11">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step12">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step13">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step14">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">
+      <input type="checkbox" id="row4step15">
+      <span class="checkmark"></span>
+  </label>
+  </div>
+
+</div>
+
+<div class="seqbox">
+  <button type="button" class="button" id="save">Save</button>
+</div>
+
+<div class="slidecontainer">
+  <input type="range" min="40" max="170" value="100" class="slider" id="myRange">
+  <p>Bpm: <span id="demo"></span></p>
+</div>
+
+
+<script src="sketch.js"></script>
+
+</body>
+</html>
